@@ -15,5 +15,11 @@
     },
     "dependencies": {
         "async": "0.1.x"
-    }
+    },
+    "keywords": [
+        "gruntplugin",
+        "sourcemap",
+        "closure compiler",
+        "minify"
+    ]
 }
