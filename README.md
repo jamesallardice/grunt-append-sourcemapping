@@ -34,8 +34,7 @@ grunt.initConfig({
 To append a sourcemapping URL comment at the end of the minified file, you need to tell Grunt to load the new task and then add another section to your config:
 
 ```javascript
-grunt.loadNpmTasks("grunt-append-sourcemapping");
-
+grunt.loadNpmTasks("grunt-append-sourcemapping"); // Load the task
 grunt.initConfig({
     "closure-compiler": {
         // Closure compiler configuration
@@ -52,6 +51,8 @@ grunt.initConfig({
 
 This will append the following comment to the end of *lib.min.js*:
 
-    //@ sourceMappingURL=lib.min.js.map
+```javascript
+//@ sourceMappingURL=lib.min.js.map
+```
 
 You can specify any number of files in the `files` property, and as this is a Grunt multitask you can specify different targets too.
