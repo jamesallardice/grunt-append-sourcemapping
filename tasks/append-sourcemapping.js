@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         var done = this.async(),
             files = this.data.files;
         async.forEach(Object.keys(files), function (file, callback) {
-            fs.appendFile(file, "//@ sourceMappingURL=" + files[file], callback);
+            fs.appendFile(file, "/*\n//@ sourceMappingURL=" + files[file] + "\n*/", callback);
         }.bind(this), done);
     });
 
