@@ -1,0 +1,19 @@
+{
+    "name": "grunt-append-sourcemapping",
+    "description": "Grunt task to append a JavaScript sourcemapping URL comment",
+    "version": "0.0.1",
+    "author": {
+        "name": "James Allardice",
+        "email": "admin@jamesallardice.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jamesallardice/grunt-append-sourcemapping.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jamesallardice/grunt-append-sourcemapping/issues"
+    },
+    "dependencies": {
+        "async": "0.1.x"
+    }
+}
