@@ -49,10 +49,12 @@ grunt.initConfig({
 });
 ```
 
-This will append the following comment to the end of *lib.min.js*:
+This will append the following comment to the end of *lib.min.js* (see [this jQuery bug ticket](http://bugs.jquery.com/ticket/13274) for full details on why the wrapping multiline comment is necessary - in short, it's a workaround for an Internet Explorer issue):
 
 ```javascript
+/*
 //@ sourceMappingURL=lib.min.js.map
+*/
 ```
 
 You can specify any number of files in the `files` property, and as this is a Grunt multitask you can specify different targets too.
